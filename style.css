@@ -16,7 +16,7 @@ body {
 }
 
 .index-p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 0px;
     font-family: Creepster;
     color: darkred;
@@ -128,4 +128,23 @@ body {
 .passed {
     border-color: darkgreen !important;
     color: darkgreen !important;
+}
+
+@media screen and (max-width: 450px) {
+    .index-h1 {
+        font-size: 3rem;
+    }
+
+    .index-p {
+        font-size: 1rem;
+    }
+
+    .conversation-1-body {
+        font-size: 1rem;
+
+    }
+
+    .conversation-1-answers {
+        gap: 60px;
+    }
 }
