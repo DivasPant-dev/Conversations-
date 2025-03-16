@@ -32,7 +32,7 @@ body {
     border-radius: 10px;
 }
 
-.level-1 {
+.level-1, .level-2, .level-3, .level-4, .level-5, .level-6, .level-7, .level-8, .level-9, .level-10, .level-11, .level-12, .level-13, .level-14, .level-15, .level-16, .level-17 {
     height: 100px;
     width: 100px;
     border: 5px solid darkred;
@@ -51,24 +51,24 @@ body {
     margin: 0;
 }
 
-.comman-1 {
+.comman-1, .comman-2 {
     font-size: 1.5rem;
 }
 
 .levels-body {
     padding: 50px;
-}
-
-.conversation-1-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 60px;
 }
 
 .conversation-1-body {
     color: darkred;
     font-family: Creepster;
     font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .index-span {
@@ -146,5 +146,9 @@ body {
 
     .conversation-1-answers {
         gap: 60px;
+    }
+
+    .levels-body {
+        grid-template-columns: 1fr 1fr;
     }
 }
